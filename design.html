@@ -28,14 +28,14 @@
 
         #header {
             width: 100%;
-            height: 130px;
+            height: 100px;
             background-color: rgb(189, 174, 245);
-            margin-bottom: 40px;
+            margin-bottom: 10px;
 
             font-size: 40px;
             color: white;
             position: sticky;
-            top: 50px;
+            top: 30px;
         }
 
         #header h2 {
@@ -110,30 +110,51 @@
             color: azure;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             padding: 15px 20px;
-            font-weight: bold;
 
         }
 
 
+        #navbar {
+
+            float: left;
+
+
+        }
+
+        #notification {
+
+            float: right;
+
+
+        }
+
+        .submenu {
+
+            position: absolute;
+            background-color: rgb(98, 185, 255);
+            display: none;
+            width: 120px;
+            font-size: 20px;
+
+        }
+
+
+
+        #nav li:hover .submenu {
+            display: block;
+        }
+
+
+        .submenu :hover {
+            background-color: black;
+        }
 
         /* #nav ul li a:hover {
             background-color: black;
            
         }*/
 
-        /*  #search {
-            width: 100%;
-            height: 30px;
-            background-color: black;
-          
 
-            display: flex;
-            justify-content: bottom;
-
-            align-items: bottom;
-            font-size: 40px;
-            color: white;
-        }*/
 
 
 
@@ -192,7 +213,7 @@
             height: 820px;
 
             margin-bottom: 30px;
-          /*  background-color: rgb(240, 209, 214);*/
+            /*  background-color: rgb(240, 209, 214);*/
 
 
         }
@@ -272,7 +293,7 @@
             width: 100%;
             height: 450px;
             margin-bottom: 30px;
-            background-color: rgb(172, 218, 142);
+            background-color: rgb(244, 220, 245);
 
         }
 
@@ -304,7 +325,7 @@
         .box img {
             border-radius: 10px;
             margin-top: 20px;
-            height: 20vh;
+            height: 31vh;
 
 
         }
@@ -355,22 +376,23 @@
 
         .about {
             width: 100%;
-            height: 300px;
-            background-color: rgb(178, 194, 223);
+            height: 150px;
+            background-color: rgb(204, 215, 236);
             margin-bottom: 30px;
             margin-top: 30px;
             float: left;
+
 
         }
 
         #us {
             width: 100%;
-            height: 400px;
+            height: 200px;
             font-size: 20px;
             text-align: justify;
             padding-top: 15px;
-
-
+         
+          
         }
 
         #top1 {
@@ -432,12 +454,12 @@
                 CONFETTI CART
             </h2>
             <ul>
-                <li><a class="cart" href="cart.html">
+                <li><a class="cart" href="">
                         <ion-icon name="basket"></ion-icon> <span> 0</span>
                     </a></li>
 
 
-                <li><a class="search" href="cart.html">
+                <li><a class="search" href="">
                         <ion-icon name="search"></ion-icon>
                     </a></li>
 
@@ -452,10 +474,40 @@
         </div>
 
         <div id="nav">
+
             <ul>
-                <li> <a href="#">Home </a> </li>
-                <li> <a href="#about"> About Us </a> </li>
-                <li> <a href="#contact"> Contact </a> </li>
+
+                <li id="navbar"> <a href="#">
+                        <ion-icon name="reorder-three-outline"></ion-icon>
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">
+                                <ion-icon name="home-outline"></ion-icon>Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">About Us </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Help </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Legal</a>
+                        </li>
+                    </ul>
+
+
+
+                </li>
+
+                <li id="notification"> <a href="#">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </a> </li>
             </ul>
 
         </div>
@@ -543,12 +595,7 @@
                 <h3>
                     Price:5000
                 </h3>
-                <p align="justify">
 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum
-                    molestias quod
-                    delectus aspernatur id !
-                </p>
 
                 <a class="add_cart ">Add to cart</a>
 
@@ -564,10 +611,6 @@
                 <h3>
                     Price:5000
                 </h3>
-                <p align="justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum
-                    molestias quod
-                    delectus aspernatur id !
 
 
                 </p>
@@ -585,11 +628,7 @@
                 <h3>
                     Price:5000
                 </h3>
-                <p align="justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum
-                    molestias quod
-                    delectus aspernatur id
-                </p>
+
                 <a class="add_cart ">Add to cart</a>
             </div>
 
@@ -603,12 +642,7 @@
                 <h3>
                     Price:5000
                 </h3>
-                <p align="justify">
 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum
-                    molestias quod
-                    delectus aspernatur id
-                </p>
                 <a class="add_cart ">Add to cart</a>
 
 
@@ -646,15 +680,9 @@
                 <h3>
                     Price:5000
                 </h3>
-                <p align="justify">
-
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum
-                    molestias quod
-                    delectus aspernatur id!
-                </p>
 
                 <a class="add_cart ">Add to cart</a>
-               
+
             </div>
             <div id="d4" class="box">
 
@@ -665,13 +693,7 @@
                 <h3>
                     Price:5000
                 </h3>
-                <p align="justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum
-                    molestias quod
-                    delectus aspernatur id !
 
-
-                </p>
                 <a class="add_cart ">Add to cart</a>
 
 
@@ -684,11 +706,7 @@
                 <h3>
                     Price:5000
                 </h3>
-                <p align="justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum
-                    molestias quod
-                    delectus aspernatur id !
-                </p>
+
                 <a class="add_cart ">Add to cart</a>
             </div>
             <div id="d4" class="box">
@@ -699,12 +717,7 @@
                 <h3>
                     Price:5000
                 </h3>
-                <p align="justify">
 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum
-                    molestias quod
-                    delectus aspernatur id !
-                </p>
                 <a class="add_cart ">Add to cart</a>
 
 
@@ -724,7 +737,7 @@
 
 
 
-    
+
 
 
         <div class="about">
@@ -732,30 +745,14 @@
             <h1>
                 About Us
             </h1>
-            <p id="us">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi perferendis amet
-                consequuntur
-                sunt, perspiciatis eos, eveniet accusantium dolorem rerum distinctio architecto
-                doloribus
-                ullam?
-                Animi et commodi dolore minima dicta tenetur nam fuga, rerum voluptatem iure voluptas
-                porro
-                possimus nisi iusto nobis esse, odio illum assumenda ratione aperiam ab quod maxime
-                impedit
-                exercitationem? Quisquam molestiae impedit, veritatis ipsum corporis delectus error. Eum
-                tempora
-                illum eaque nisi officia facere reprehenderit a quod laborum deleniti assumenda aliquam,
-                saepe
-                temporibus, veritatis esse quas tenetur minus asperiores eos sunt ex fugit? Corporis,
-                labore
-                voluptatum magnam est tempore aut deserunt facere expedita quod iste excepturi nihil
-                placeat
-                nobis illo ex quo eveniet! Soluta nihil exercitationem inventore quo! Fugit rerum sed
-                impedit
-                ipsam praesentium consequatur perferendis odio illum distinctio, molestias nihil ipsum
-                vel
-                voluptatum commodi deleniti temporibus. Incidunt tempore tenetur consequatur? Tempora
-                earum
+            <p  content="justify" id="us">
+                Confetti Cart has the party supplies you need, all in one place, all year long. For birthdays and
+                beyond, no matter what you're celebrating, this online portal has everything you could ever want when
+                you're throwing the best party ever. The ease and convenience of the site makes planning and shopping
+                for your party almost as fun as having it!
+
+
+
             </p>
 
 
@@ -776,25 +773,23 @@
 
 
                     <li id="">
-                        <a href="#"> terms and condition</a>
+                        <a href="#"> Terms and Conditions</a>
 
                     </li>
                     <li id="">
                         <a href="#"> Privacy policy</a>
 
                     </li>
-                    <li> contact &#169 +91-70-847264899
+                    <li> Contact &#169 +91-70-847264899
 
                     </li>
                     <li> Email : ourwebsite@gmail.com
 
                     </li>
-                    <li> Website template &#169
-                        <a href="https://www.beta-labs.in/">beta-labs </a>
-                    </li>
+
                     <li>
 
-                        Address:2rd floor,C blocK,krishna colony,Bangalore
+                        Address:2rd floor,C block,krishna colony,Mathura
 
                     </li>
                     <li>
