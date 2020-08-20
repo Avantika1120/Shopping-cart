@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+   /* font-family: 'Times New Roman', Times, serif;*/
+
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+    padding: 15px;
+    margin: 0px auto;
+    /*border: solid blue;*/
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(121, 37, 65);
+    margin-bottom: 10px;
+    font-family: cursive;
+    font-size: 40px;
+    color: white;
+    position: sticky;
+    top: 30px;
+}
+
+#header h2 {
+    padding-top: 20px;
+    float: left;
+
+
+}
+
+#header ul li {
+
+    padding-top: 20px;
+    float: right;
+
+
+
+
+}
+
+#header ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#header ul li a {
+    display: block;
+    text-decoration: none;
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px 20px;
+    font-weight: bold;
+
+
+
+}
+#logo{
+    height: 70px;
+    width: auto;
+    border-image-width: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+#nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 223, 224);
+    margin-bottom: 30px;
+
+
+    justify-content: center;
+
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    position: sticky;
+    top: 0;
+
+}
+
+#nav ul li {
+
+    display: inline-block;
+
+}
+
+#nav ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 10px;
+
+}
+
+
+#navbar {
+
+    float: left;
+
+
+}
+
+#notification {
+
+    float: right;
+
+
+}
+
+.submenu {
+
+    position: absolute;
+    background-color: rgb(98, 185, 255);
+    display: none;
+    width: 120px;
+    font-size: 20px;
+
+}
+
+
+
+#nav li:hover .submenu {
+    display: block;
+}
+
+
+.submenu :hover {
+    background-color: black;
+}
+
+/* #nav ul li a:hover {
+    background-color: black;
+   
+}*/
+
+
+
+
+
+
+#banner {
+    width: 100%;
+    height: 250px;
+    background-image: url(./img/WhatsApp\ Image\ 2020-08-17\ at\ 9.35.13\ PM.jpeg);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+
+    margin-bottom: 30px;
+
+
+    font-size: 40px;
+    color: white;
+}
+
+#banner h2 {
+    margin: 20px;
+
+
+}
+
+#round {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 30px;
+    /*  background-color: darkturquoise; */
+
+}
+
+
+
+.image img {
+
+
+    width: 200px;
+    height: 80px;
+    border-radius: 50%;
+
+    margin-bottom: 30px;
+    float: left;
+    margin-left: 35px;
+
+
+}
+
+
+
+
+
+
+#topdeals {
+    width: 100%;
+    height: 820px;
+
+    margin-bottom: 30px;
+    /*  background-color: rgb(240, 209, 214);*/
+
+
+}
+
+#left-side {
+    width: 48%;
+    height: 700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 16px;
+
+    float: right;
+
+
+}
+
+
+#right-side {
+    width: 48%;
+    height: 700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    float: right;
+
+}
+
+.article {
+    background-size: 100% 223px;
+    width: 100%;
+    height: 223px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+
+    font-size: 40px;
+    color: aqua;
+
+}
+
+#p1 {
+    background-image: url(./img/gift.jpg);
+
+}
+
+#p2 {
+    background-image: url(./img/christmascokies.jpg);
+
+}
+
+#p3 {
+    background-image: url(./img/card.jpg);
+
+}
+
+#p4 {
+    background-image: url(./img/cookies.jpg);
+
+}
+
+#p5 {
+    background-image: url(./img/cape.jpg);
+
+}
+
+#p6 {
+    background-image: url(./img/lights.jpg);
+
+}
+
+
+
+
+#theme {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 30px;
+    background-color: rgb(244, 220, 245);
+
+}
+
+
+
+.box {
+    width: 22%;
+    height: 370px;
+
+    background-color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    float: left;
+    margin-left: 30px;
+
+}
+
+
+
+
+.box h2 {
+
+    font-size: medium;
+    font-style: normal;
+    text-align: center;
+}
+
+
+.box img {
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 31vh;
+
+
+}
+
+.box p {
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+}
+
+.box a {
+    display: block;
+    background-color: rgb(82, 126, 190);
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: large;
+    color: seashell;
+    border: 0;
+    text-align: center;
+    padding-top: 5px;
+    margin: 20px auto;
+    text-decoration: none;
+
+}
+
+.box a:hover {
+    background-color: indigo;
+}
+
+
+
+.box h3 {
+
+    font-size: medium;
+    font-style: normal;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.about {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(204, 215, 236);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    float: left;
+
+
+}
+
+#us {
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 15px;
+
+
+}
+
+#top1 {
+    width: 100%;
+    height: 50px;
+    background-color: palevioletred;
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    font-size: 20px;
+    color: white;
+
+}
+
+
+#footer {
+
+    width: 100%;
+    height: 200px;
+    background-color: paleturquoise;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    color: black;
+
+}
+
+#footer ul {
+    list-style-type: none;
+
+}
+
+
+#top2 {
+
+    text-align: center;
+
+
+}
+
+
+
+/*cart css*/
+
+
+
+
+.product-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+
+
+}
+
+.product-title {
+    width: 45%;
+
+}
+
+.price {
+    width: 15%;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+
+}
+
+.product {
+    width: 45%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+}

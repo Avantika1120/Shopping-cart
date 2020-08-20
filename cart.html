@@ -4,224 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link   href="style.css" rel="stylesheet">
     <title>Document</title>
-    <style>
-        body {
-
-            background-image: url(img/background.jpg);
-            background-repeat: no-repeat;
-            background-size: 100% 200px;
-
-            color: white;
-
-
-        }
-
-        .box {
-
-            width: 335px;
-            margin-top: 50px;
-            margin-left: 20px;
-            margin-right: 20px;
-            background-color: aliceblue;
-            border-radius: 10px;
-            color: black;
-        }
-
-
-        .box h2 {
-
-            font-size: medium;
-            font-style: normal;
-            text-align: center;
-        }
-
-        .box h3 {
-
-            font-size: medium;
-            font-style: normal;
-            text-align: center;
-        }
-
-
-        .box img {
-            border-radius: 10px;
-            margin-top: 20px;
-            height: 30vh;
-
-
-        }
-
-        .box p {
-
-            padding-left: 30px;
-            padding-right: 30px;
-
-
-        }
-
-        .box a {
-            display: block;
-            background-color: red;
-            width: 80%;
-            height: 30px;
-            border-radius: 10px;
-            font-size: large;
-            color: seashell;
-            border: 0;
-            text-align: center;
-            padding-top: 5px;
-            margin: 20px auto;
-            text-decoration: none;
-
-        }
-
-        .box a:hover {
-            background-color: indigo;
-        }
-
-        .link a {
-            display: block;
-            background-color: rgb(82, 24, 90);
-
-
-            font-size: large;
-            color: seashell;
-            border: 0;
-
-            text-decoration: none;
-
-        }
-
-        .link {
-            display: flex;
-
-            justify-content: center;
-            align-items: center;
-        }
-
-        #d1 {
-            float: left;
-        }
-
-        #d2 {
-            float: left;
-        }
-
-        #d3 {
-            float: left;
-        }
-
-        #d4 {
-            float: left;
-        }
-    </style>
 
 </head>
 
 <body>
 
 
-    <div class="link">
-        <button><a href="index.html"> HOME</a></button>
-
-        <button><a href="about.html">ABOUT</a></button>
-        <button> <a class="cart" href="cart.html">
-                <ion-icon name="basket"></ion-icon> CART<span> 0</span>
-            </a></button>
-
-    </div>
-    <div>
-        <h1 style="color: aqua; margin-top: 110px;" align="center">
-            PRODUCTS
-        </h1>
-    </div>
+    <div id="header">
 
 
-
-    <div id="d1" class="box">
-
-
-        <img src="img/coat.jpg" style="width:80%;display:block;margin-left:auto;margin-right:auto;">
         <h2>
-            COAT
+
+            CONFETTI CART
         </h2>
-        <h3>
-            Price:5000
-        </h3>
-        <p align="justify">
-
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum molestias
-            quod
-            delectus aspernatur id praesentium voluptas iste!
-        </p>
-
-        <a class="add_cart cart1" href="#">Add to cart</a>
-    </div>
-
-    <div id="d2" class="box">
+        <ul>
+            <li><a class="cart" href="">
+                    <ion-icon name="basket"></ion-icon> <span> 0</span>
+                </a></li>
 
 
-        <img src="img/jeans.jpg" style="width:80%;display:block;margin-left:auto;margin-right:auto;">
-        <h2>
-            JEANS
-        </h2>
-        <h3>
-            Price:2000
-        </h3>
-
-        <p align="justify">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum molestias
-            quod
-            delectus aspernatur id praesentium voluptas iste!
+            <li><a class="search" href="">
+                    <ion-icon name="search"></ion-icon>
+                </a></li>
 
 
-        </p>
-        <a class="add_cart cart2" href="#">Add to cart</a>
-
-    </div>
-    <div id="d3" class="box">
-
-
-        <img src="img/laptop.jpg" style="width:80%;display:block;margin-left:auto;margin-right:auto;">
-        <h2>
-            LAPTOP
-        </h2>
-        <h3>
-            Price:50000
-        </h3>
-        <p align="justify">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum molestias
-            quod
-            delectus aspernatur id praesentium voluptas iste!
-        </p>
-        <a class="add_cart cart3" href="#">Add to cart</a>
-    </div>
+            <li><a href="cart.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                   
+                </a></li>
 
 
-    <div id="d4" class="box">
-
-
-        <img src="img/perfume.jpg" style="width:80%;display:block;margin-left:auto;margin-right:auto;">
-        <h2>
-            PERFUME
-        </h2>
-        <h3>
-            Price:850
-        </h3>
-        <p align="justify">
-
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, vel aspernatur? Voluptatum molestias
-            quod
-            delectus aspernatur id praesentium voluptas iste!
-        </p>
-        <a class="add_cart cart4" href="#">Add to cart</a>
+        </ul>
 
     </div>
 
+    <div id="nav">
+
+        <ul>
+
+            <li id="navbar"> <a href="#">
+                    <ion-icon name="reorder-three-outline"></ion-icon>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">
+                            <ion-icon name="home-outline"></ion-icon>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">About Us </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">Help </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">Legal</a>
+                    </li>
+                </ul>
+
+
+            </li>
+
+            <li id="notification"> <a href="#">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </a> </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class=" product-container">
+        <div class=" product-header">
+            <h5 class=" product-title">
+                PRODUCT
+            </h5>
+            <h5 class=" price">
+                PRICE
+            </h5>
+            <h5 class=" quantity">
+                QUANTITY
+            </h5>
+            <h5 class=" total">
+                TOTAL
+            </h5>
+        </div>
+
+
+        <div class="products">
+
+
+        </div>
+
+    </div>
+
+    <script src="javascript.js"></script>
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-
 
 </body>
 

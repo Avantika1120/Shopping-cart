@@ -131,7 +131,7 @@ function setItems(product) {
 
 
 
-   
+
     if (cartItems != null) {
         // console.log(cartItems[product.tag]);
 
@@ -162,24 +162,59 @@ function setItems(product) {
 }
 
 
-function totalCost(product){
-    let cartCost=localStorage.getItem('totalCost');
+function totalCost(product) {
+    let cartCost = localStorage.getItem('totalCost');
 
 
-    console.log("My cartCost is",cartCost);
+    console.log("My cartCost is", cartCost);
     console.log(typeof cartCost);
 
-    if(cartCost !=null){
-        cartCost =parseInt(cartCost);
-        localStorage.setItem("totalCost",cartCost+ product.price);
+    if (cartCost != null) {
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + product.price);
 
     }
-    
-     else{
+
+    else {
         localStorage.setItem("totalCost", product.price);
 
     }
-     
+
+}
+
+
+
+
+function displayCart() {
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+
+    // console.log(cartItems)
+    let productContainer = document.querySelector(".product");
+
+    if (cartItems && productContainer) {
+        // console.log("running");
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+
+            productContainer.innerHTML += '
+                <div class="product">
+                < img src = "./img/${item.tag}.jpg" >
+                   <span>${item.name}</span> 
+
+                   
+                </div>
+                
+                
+                <div>
+
+                </div>'
+
+                    
+
+        });
+
+    }
 
 
 
