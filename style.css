@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
    /* font-family: 'Times New Roman', Times, serif;*/
-
+   
 }
 
 h1 {
@@ -20,18 +20,18 @@ h1 {
 
 #header {
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: rgb(172, 55, 113);
     margin-bottom: 10px;
-    font-family: cursive;
-    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
     color: white;
     position: sticky;
     top: 30px;
 }
 
 #header h2 {
-    padding-top: 20px;
+    padding-top: 10px;
     float: left;
 
 
@@ -64,9 +64,9 @@ h1 {
 
 }
 #logo{
-    height: 70px;
+    height: 50px;
     width: auto;
-    border-image-width: 20px;
+    
     padding-left: 20px;
 }
 
@@ -75,7 +75,7 @@ h1 {
 
 #nav {
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: rgb(224, 223, 224);
     margin-bottom: 30px;
 
@@ -83,7 +83,7 @@ h1 {
     justify-content: center;
 
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     position: sticky;
     top: 0;
@@ -106,7 +106,7 @@ h1 {
     text-decoration: none;
     color: azure;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px 10px;
+    padding:1px 2px ;
 
 }
 
@@ -121,8 +121,8 @@ h1 {
 #notification {
 
     float: right;
-
-
+    
+    
 }
 
 .submenu {
@@ -291,7 +291,7 @@ h1 {
     width: 100%;
     height: 450px;
     margin-bottom: 30px;
-    background-color: rgb(244, 220, 245);
+    /*background-color: rgb(220, 203, 221);*/
 
 }
 
@@ -301,7 +301,7 @@ h1 {
     width: 22%;
     height: 370px;
 
-    background-color: white;
+    background-color: rgb(247, 239, 239);
     margin-bottom: 30px;
     margin-top: 30px auto;
     float: left;
