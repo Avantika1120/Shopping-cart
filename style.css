@@ -164,9 +164,9 @@ h1 {
 
 #banner {
     width: 100%;
-    height: 220px;
-    background-image: url(./img/WhatsApp\ Image\ 2020-08-17\ at\ 9.35.13\ PM.jpeg);
-    background-size: 100% 220px;
+    height: 280px;
+    background-image: url(./img/FINAL.png);
+    background-size: 100% 280px;
     background-repeat: no-repeat;
 
     margin-bottom: 30px;
@@ -176,11 +176,7 @@ h1 {
     color: white;
 }
 
-#banner h2 {
-    margin: 20px;
 
-
-}
 
 #round {
     width: 100%;
