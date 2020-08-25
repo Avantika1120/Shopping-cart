@@ -371,36 +371,27 @@ i{
 
 
 
-#topdeals {
+#round {
     width: 100%;
-    height: 500px;
-    margin-bottom: 60px;
+    height: 100px;
+    margin-bottom: 30px;
     margin-top: 30px;
-    
   /*  background-color: darkturquoise; */
 
 }
-.image h3 {
-
-    font-size: medium;
-    font-style: normal;
-    text-align: center;
-    float:left;
-}
-
-
 
 
 
 .image img {
 
 
-    width: 25%;
-    height: 200px;
-   
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+
     margin-bottom: 30px;
     float: left;
-    margin-left: 90px;
+    margin-left: 70px;
 
 
 }
@@ -471,26 +462,38 @@ i{
     }
 }
 
-/*#topdeals {
+#topdeals {
     width: 100%;
     height: 820px;
 
     margin-bottom: 30px;
-   
+    /*  background-color: rgb(240, 209, 214);*/
 
 
 }
 
 #left-side {
-    width: 28%;
+    width: 48%;
     height: 700px;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-right: 16px;  
-    float: left;
+    margin-right: 16px;
+
+    float: right;
+
+
 }
 
 
+#right-side {
+    width: 48%;
+    height: 700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    float: right;
+
+}
 
 .article {
     background-size: 100% 223px;
@@ -535,7 +538,7 @@ i{
 #p6 {
     background-image: url(./img/lights.jpg);
 
-}*/
+}
 
 
 
@@ -544,7 +547,7 @@ i{
     width: 100%;
     height: 1000px;
     margin-bottom: 30px;
-   
+    /*background-color: rgb(220, 203, 221);*/
 
 }
 
@@ -560,6 +563,10 @@ i{
     float: left;
     margin-left: 150px;
     
+
+
+
+
 }
 
 
@@ -577,7 +584,7 @@ i{
     /*border-radius: 10px;*/
 
     margin-top: 20px;
-    height: 39vh;
+    height: 31vh;
 
 
 }
