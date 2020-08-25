@@ -5,13 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="aastyle.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
     <!-- bootstrap cdn link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
     <!-- including font-awesome and bootstrap-social -->
     <script src="https://kit.fontawesome.com/f4bc18eeb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/bootstrap-social.css">
@@ -24,13 +26,17 @@
 <body>
 
     <nav class="navbar navbar-expand-sm bg-secondary navbar-light">
-        <a class=" wow zoomOut navbar-brand" href="#">Confitti Cart</a>
+        <a class=" wow rollIn navbar-brand" href="#">Confetti Cart</a>
+
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
             <ul class="navbar-nav ml-auto animated slideInDown">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
@@ -43,10 +49,13 @@
                     <a class="nav-link" href="contact.php">Contact</a>
                 </li>
             </ul>
+
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
+
+
             <!-- login icon -->
             <span class="navbar-text">
                 <a data-toggle="modal" data-target="#loginModal">
@@ -58,6 +67,22 @@
 
         </div>
     </nav>
+
+    <div id="nav">
+
+
+        <img class="wow zoomOut" src="./img/miniproject_logo (2).jpg">
+        <h1 class=" wow zoomOut">Confetti Cart</h1>
+
+
+    </div>
+
+
+
+    <div  id="banner">
+
+    </div>
+
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
@@ -94,12 +119,12 @@
 
     <div id="topdeals">
         <a name="team"></a>
-        <h1>
+        <h1 class="wow swing">
             Categories
         </h1>
 
         <div class="image">
-            <img src="./img/christmas.jpg">
+            <img src="./img/caps.jpeg">
            
         </div>
        
@@ -132,7 +157,7 @@
     <div id="theme">
         <a name="technologies"></a>
         <div>
-            <h1 style="color: cadetblue;">
+            <h1 class="wow rubberBand" style="color: cadetblue;">
                 Trending
             </h1>
         </div>
@@ -217,7 +242,7 @@
     <div id="theme">
         <a name="technologies"></a>
         <div>
-            <h1 style="color: goldenrod;">
+            <h1 class="wow rubberBand" style="color: goldenrod;">
                 Party Decoration
             </h1>
         </div>
@@ -289,10 +314,10 @@
 
 
         <div id="about">
-            <h1>
+            <h1 class="wow slideInDown">
                 About Us
             </h1>
-            <p id="aboutcontent">
+            <p class="wow slideInLeft " id="aboutcontent">
                 Confetti Cart has the party supplies you need, all in one place, all year long. For birthdays and
                 beyond, no matter what you're celebrating, this online portal has everything you could ever want
                 when
@@ -305,7 +330,7 @@
             </p>
 
         </div>
-        <div id="aboutimg">
+        <div class="wow fadeOut" id="aboutimg">
             <img src="./img/miniproject_logo (2).jpg">
         </div>
 
@@ -316,7 +341,7 @@
 
     <div id="top1">
         <a name="contact"></a>
-        <a href="#"> BACK TO TOP</a>
+        <a  class="wow flip" href="#"> BACK TO TOP</a>
     </div>
 
     <div id="footer">
@@ -377,6 +402,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
         integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
         crossorigin="anonymous"></script>
+
     <script>
         var wow = new WOW(
             {
@@ -395,6 +421,8 @@
         );
         wow.init();
     </script>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
