@@ -1,77 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="aastyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
     <title>Document</title>
-    <style>
-        body {
-
-            background-image: url(img/bank.jpg);
-            background-size: 100%;
-            color: black;
-
-
-        }
-    </style>
 </head>
-
 <body>
-    <p>
-        THIS IS SHOPPING WEBSITE.
-    </p>
+
+    <div class=" wow zoomOut" id="banner">
+
+    </div>
+
+    
+    <div class="aboutus">
+
+
+        <div id="about">
+            <h1 class="wow slideInDown">
+                About Us
+            </h1>
+            <p class="wow slideInLeft " id="aboutcontent">
+                Confetti Cart has the party supplies you need, all in one place, all year long. For birthdays and
+                beyond, no matter what you're celebrating, this online portal has everything you could ever want
+                when
+                you're throwing the best party ever. The ease and convenience of the site makes planning and
+                shopping
+                for your party almost as fun as having it!
+
+
+
+            </p>
+
+        </div>
+        <div class="wow fadeOut" id="aboutimg">
+            <img src="./img/miniproject_logo (2).jpg">
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+    integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+    crossorigin="anonymous"></script>
+
+
+
+    <script>
+        var wow = new WOW(
+            {
+                boxClass: 'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset: 0,          // distance to the element when triggering the animation (default is 0)
+                mobile: true,       // trigger animations on mobile devices (default is true)
+                live: true,       // act on asynchronously loaded content (default is true)
+                callback: function (box) {
+                    // the callback is fired every time an animation is started
+                    // the argument that is passed in is the DOM node being animated
+                },
+                scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                resetAnimation: true,     // reset animation on end (default is true)
+            }
+        );
+        wow.init();
+    </script>
+
+
+
 </body>
-
 </html>
-<div id="nav">
-
-    <ul >
-
-        <li id="navbar"> <a href="#">
-               
-                    <ion-icon name="reorder-three-outline"></ion-icon>
-               
-            </a>
-            <ul class="submenu">
-                <li>
-                    <a href="#">
-                        <ion-icon name="home-outline"></ion-icon>Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#">About Us </a>
-                </li>
-
-
-                <li>
-                    <a href="#">Help </a>
-                </li>
-                <li>
-                    <a href="#">Contact Us </a>
-                </li>
-                <li>
-                    <a href="#">Feedback </a>
-                </li>
-
-
-                <li>
-                    <a href="#">Legal</a>
-                </li>
-            </ul>
-
-
-        </li>
-
-
-       
-        <li id="menu"><a href="#contact">CONTACT </a></li>
-        <li id="menu"> <a href="#about">ABOUT US </a> </li>
-        <li id="menu"> <a href="#team"> TEAM </a> </li>
-        <li id="menu"> <a href="#">HOME </a> </li>
-       
-
-
-
-    </ul>
-</div>
