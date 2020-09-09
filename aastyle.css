@@ -110,60 +110,6 @@ h1 {
 
 
 
-
-
-#banner {
-    width: 100%;
-    height: 280px;
-    background-image: url(./img/FINAL.png);
-    background-size: 100% 280px;
-    background-repeat: no-repeat;
-    margin-bottom: 30px;
-    font-size: 40px;
-    color: white;
-}
-
-
-
-#topdeals {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 60px;
-    margin-top: 30px;
-    
-  /*  background-color: darkturquoise; */
-
-}
-.image h3 {
-
-    font-size: medium;
-    font-style: normal;
-    text-align: center;
-    float:left;
-}
-
-
-
-
-
-.image img {
-
-
-    width: 25%;
-    height: 200px;
-   
-    margin-bottom: 30px;
-    float: left;
-    margin-left: 90px;
-
-
-}
-
-
-
-
-
-
 #theme {
     width: 100%;
     height: 1000px;
