@@ -126,3 +126,11 @@ h1 {
 
 
 
+/* About Us*/
+.breadcrumbs-section{
+background-color: #e9ecef;
+}
+/* Contact Us*/
+.address p{
+    font-weight: 600;
+    }
