@@ -77,11 +77,11 @@
          color: #fff;
          filter: blur(2px);
          text-shadow: 0 0 10px #0274df  ,
-              0 0 20px#0274df  ,
+              0 0 20px #0274df  ,
               0 0 40px #0274df  ,
               0 0 80px  #0274df ,
               0 0 120px #0274df  ,
-              0 0 200px #0274df ,
+              0 0 200px #0274df  ,
               0 0 300px #0274df ,
               0 0 400px #0274df ;
 
@@ -90,7 +90,7 @@
 
     6%,
     94% {
-         color: rgb(228, 228, 236);
+         color: grey;
          filter: blur(0px);
          text-shadow: none;
     }
@@ -193,7 +193,7 @@
     
          6%,
          94% {
-              color: rgb(228, 228, 236);
+              color: grey;
               filter: blur(0px);
               text-shadow: none;
          }
