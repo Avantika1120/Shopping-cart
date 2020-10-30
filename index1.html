@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles1.css" />
     <link rel="stylesheet" href="light.css">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="scrollbar.css">
     <link rel='icon' href="img/logo.png">
 
 
@@ -31,6 +32,93 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
         integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
         crossorigin="anonymous"></script>
+
+        <!-- <style>
+             h1:before{
+               content: attr(data-count);
+               position:absolute;
+               color: white;
+               right: 16px;
+               font-size: 15px;
+               text-align: center;
+               top: -12px;
+               width: 20px;
+               height: 20px;
+               background: red;
+               border-radius: 50%;
+               opacity: 0;
+          }
+
+          h1.zero:before
+          {
+               opacity: 1;
+
+          }
+
+          h1{
+               width:3%;
+               position: relative;
+               top:60px;
+               left:90%;
+               cursor: pointer;
+          }
+
+          .select{
+               width:60%;
+               height:580px;
+               background: #222;
+               position:absolute;
+               top:-1000px;
+               left:20px;
+               transition: 0.5s;
+               overflow-y: auto;
+               margin: auto;
+          }
+          .select.display{
+               top: 10px;
+          }
+          .select div{
+               width: 100%;
+               height: 200px;
+               display: flex;
+               padding: 5px;
+               border: 1px solid white;
+               position: relative;
+               margin:5px auto;
+
+          }
+
+          .select div img{
+               width:300px;
+               height: 100%;
+          }
+          .select div p{
+               padding: 35px;
+               color:white;
+          }
+
+          .select div h6,
+          .select div button{
+               position: absolute;
+               left:45%;
+               top:50%;
+               color: white;
+          }
+
+          .select div button{
+              
+               left:65%;
+               top:50%;
+          }
+
+          .select div span{
+               display: none;
+
+          }
+
+
+
+        </style> -->
 
 
 
@@ -56,6 +144,9 @@
 </head>
 
 <body>
+
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
@@ -75,7 +166,8 @@
                     <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="#shopping-cart" class="button" id="signup">Shopping Cart</a>
+                   <a href="#shopping-cart" class="button" id="signup">Shopping Cart</a>
+                    <!--  <h1><i class="fa fa-shopping-cart"></i></h1>  -->
                 </li>
             </ul>
         </div>
@@ -169,26 +261,229 @@
     </div>
     <!--product -->
     <section class="container content-section">
-        <h2 class="section-header">MERCH</h2>
+        <h2 class="section-header">CART</h2>
         <div class="shop-items">
             <div class="shop-item">
-                <span class="shop-item-title">T-Shirt</span>
-                <img class="shop-item-image" src="Images/gift.jpg">
+                <span class="shop-item-title">Candles</span>
+                <img class="shop-item-image" src="Images/candle set.png">
                 <div class="shop-item-details">
-                    <span class="shop-item-price">$19.99</span>
+                    <span class="shop-item-price">Rs99</span>
                     <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div>
             </div>
             <div class="shop-item">
-                <span class="shop-item-title">Coffee Cup</span>
-                <img class="shop-item-image" src="Images/gift.jpg">
+                <span class="shop-item-title">Poppers</span>
+                <img class="shop-item-image" src="Images/Golden popper.jpg">
                 <div class="shop-item-details">
-                    <span class="shop-item-price">$6.99</span>
+                    <span class="shop-item-price">Rs250</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Stylish Cards</span>
+                <img class="shop-item-image" src="Images/card.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs200</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Mask</span>
+                <img class="shop-item-image" src="Images/masks.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs399</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Lantern</span>
+                <img class="shop-item-image" src="Images/lantern.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs349</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Lights</span>
+                <img class="shop-item-image" src="Images/light.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs169</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Party Caps</span>
+                <img class="shop-item-image" src="Images/bday caps.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs110</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Balloon</span>
+                <img class="shop-item-image" src="Images/bday ballons.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs149</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Frills</span>
+                <img class="shop-item-image" src="Images/beads.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs110</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Christmas Tree</span>
+                <img class="shop-item-image" src="Images/christmas tree.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs449</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Color Lights</span>
+                <img class="shop-item-image" src="Images/Color Lights.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs329</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Diwali Diyas</span>
+                <img class="shop-item-image" src="Images/diya.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs250</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Multicolor Frills</span>
+                <img class="shop-item-image" src="Images/frills.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs250</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Props</span>
+                <img class="shop-item-image" src="Images/props.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs289</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Rangoli Stickers Set</span>
+                <img class="shop-item-image" src="Images/rangoli sticker.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs239</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Star</span>
+                <img class="shop-item-image" src="Images/star.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs89</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Star Light</span>
+                <img class="shop-item-image" src="Images/starLIGHT.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs349</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Handicraft Diyas</span>
+                <img class="shop-item-image" src="Images/handicraft diya.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs200</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Party Plate Set</span>
+                <img class="shop-item-image" src="Images/plate.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs399</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Smiley Balloon</span>
+                <img class="shop-item-image" src="Images/smiley ballons.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs250</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Fairy Lights</span>
+                <img class="shop-item-image" src="Images/Golden Lights.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs348</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Paper Cups Set</span>
+                <img class="shop-item-image" src="Images/cups.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs170</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <span class="shop-item-title">Pumpkin Light</span>
+                <img class="shop-item-image" src="Images/pumkin.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs459</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+
+            
+
+            <div class="shop-item">
+                <span class="shop-item-title">Bow</span>
+                <img class="shop-item-image" src="Images/bow.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs120</span>
                     <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div>
             </div>
         </div>
     </section>
+    <div class="select">
+
+     </div>
 
 
     <!-- Cart Section -->
@@ -228,51 +523,66 @@
 
 
 
-    <!-- Footer Section -->
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>About Us</h2>
-                    <a href="">How it works</a> <a href="">Testimonials</a>
-                    <a href="">Careers</a> <a href="">Terms of Service</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Contact Us</h2>
-                    <a href="">Contact</a> <a href="">Support</a>
-                    <a href="">Destinations</a>
-                </div>
+   <!-- Footer Section -->
+   <div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>About Us</h2>
+                <a href="">How it works</a> <a href="">Testimonials</a>
+                <a href="">Careers</a> <a href="">Terms of Service</a>
             </div>
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Videos</h2>
-                    <a href="">Submit Video</a> <a href="">Ambassadors</a>
-                    <a href="">Agency</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Social Media</h2>
-                    <a href="">Instagram</a> <a href="">Facebook</a>
-                    <a href="">Youtube</a> <a href="">Twitter</a>
-                </div>
+            <div class="footer__link--items">
+                <h2>Contact Us</h2>
+                <a href="">Contact</a> <a href="">Support</a>
+                <a href="">Destinations</a>
             </div>
         </div>
-        <section class="social__media">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="" id="footer__logo">CONFETTI CART</a>
-                </div>
-                <p class="website__rights">© CONFETTI CART 2020. All rights reserved</p>
-                <div class="social__icons">
-                    <a href="" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="" class="social__icon--link"><i class="fab fa-instagram"></i></a>
-                    <a href="" class="social__icon--link"><i class="fab fa-youtube"></i></a>
-                    <a href="" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-                    <a href="" class="social__icon--link"><i class="fab fa-twitter"></i></a>
-                </div>
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>Videos</h2>
+                <a href="">Submit Video</a> <a href="">Ambassadors</a>
+                <a href="">Agency</a>
             </div>
-        </section>
+            <div class="footer__link--items">
+                <h2>Social Media</h2>
+                <a href="">Instagram</a> <a href="">Facebook</a>
+                <a href="">Youtube</a> <a href="">Twitter</a>
+            </div>
+        </div>
     </div>
+    <section class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="" id="footer__logo">CONFETTI CART</a>
+            </div>
+            <p class="website__rights">© CONFETTI CART 2020. All rights reserved</p>
+            <div class="social__icons">
+                <a href="" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                <a href="" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                <a href="" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                <a href="" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+</div>
 
+
+
+
+
+
+    <script type="text/javascript">
+        let progress=document.getElementById('progressbar');
+        let totalheight= document.body.scrollHeight - window.innerHeight;
+        window.onscroll=function(){
+            let progressheight= (window.pageYOffset/totalheight)* 100;
+            progress.style.height= progressheight + "%";
+        }
+    
+        
+        </script>
 
 </body>
 
