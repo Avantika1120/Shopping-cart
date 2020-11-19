@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles1.css" />
     <link rel="stylesheet" href="light.css">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="scrollbar.css">
+    <!--<link rel="stylesheet" href="scrollbar.css">!-->
     <link rel='icon' href="img/logo.png">
 
 
@@ -32,8 +32,150 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
         integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
         crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-        <!-- <style>
+        .header {
+            width: 100%;
+            height: 70px;
+            background-color: #2f3640;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .header img {
+            width: 70px;
+            height: 70px;
+            margin-right: 15px;
+
+        }
+
+        .header h1 {
+            line-height: 70px;
+            color: white;
+
+        }
+
+        .content {
+            width: 100%;
+            padding: 20px;
+            transition: .5s;
+            float: right;
+        }
+
+        .content img {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: auto;
+
+        }
+
+        .content p {
+            text-align: justify;
+            margin-top: 15px;
+        }
+
+        .sidebar {
+            width: 50%;
+            height: 100%;
+            position: fixed;
+            top: 70px;
+            background-color: #353b48;
+            margin: 0;
+            left: -100%;
+            transition: .7s;
+        }
+
+
+
+
+        .sidebar a i {
+            margin: 10px;
+        }
+
+
+
+        .social {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 30px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+            margin-top: 200px;
+        }
+
+        i {
+            font-size: 30px;
+            color: white;
+        }
+
+        .show-btn,
+        .hide-btn {
+            font-size: 30px;
+            color: white;
+            position: fixed;
+            top: 20px;
+            left: 30px;
+            transition: .5s;
+        }
+
+        .hide-btn {
+            opacity: 0;
+        }
+
+        #chk {
+
+            visibility: hidden;
+
+
+        }
+
+
+        #chk:checked~.sidebar {
+            left: 0;
+        }
+
+        #chk:checked~.show-btn {
+            opacity: 0;
+        }
+
+        #chk:checked~.hide-btn {
+            opacity: 1;
+        }
+
+        #chk:checked~.content {
+            width: 82%;
+        }
+
+        @media(max-width:768px) {
+            .sidebar {
+                width: 100%;
+                text-align: center;
+            }
+
+            .header h1 {
+                display: none;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+    <!-- <style>
              h1:before{
                content: attr(data-count);
                position:absolute;
@@ -145,11 +287,60 @@
 
 <body>
 
-    <div id="progressbar"></div>
-    <div id="scrollpath"></div>
+    <!--  <div id="progressbar"></div>
+    <div id="scrollpath"></div>-->
+    
+       
+
+
+
+
+
+
+  
+
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
+
+           <input type="checkbox" name="" id="chk">
+    <label for="chk" class="show-btn">
+        <i class="fa fa-shopping-cart" style="color: aqua;" ></i>
+    </label>
+    <label for="chk" class="hide-btn">
+        <i class="fa fa-times" style="color: aqua;"></i>
+    </label>
+
+    <div class="sidebar">
+        <div class="main" id="shopping-cart">
+
+          
+        
+                    <section class="container content-section">
+                        
+                        <div class="cart-row">
+                           
+                            <span class="cart-item cart-header cart-column">ITEM NAME</span>
+                            <span class="cart-price cart-header cart-column">ITEM PRICE</span>
+                            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                        </div>
+                        <div class="cart-items">
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total</strong>
+                            <span class="cart-total-price">Rs0</span>
+                        </div>
+                        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                    </section>
+                
+        </div>
+    </div>
+
+
+
+
+
+  
             <a href="#home" id="navbar__logo">CONFETTI CART</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span> <span class="bar"></span>
@@ -166,7 +357,7 @@
                     <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
                 </li>
                 <li class="navbar__btn">
-                   <a href="#shopping-cart" class="button" id="signup">Shopping Cart</a>
+                    <a href="#shopping-cart" class="button" id="signup">Shopping Cart</a>
                     <!--  <h1><i class="fa fa-shopping-cart"></i></h1>  -->
                 </li>
             </ul>
@@ -209,8 +400,9 @@
         style="color:rgb(243, 233, 233); background-color: #000; margin: 0px;">
 
         <p style="padding-top:10px; font-size: 15px;">
-            CONFETTI cartCONFETTI cartCONFETTI cartCONFETTI cartCONFETTI cartCONFETTI cartCONFETTI cartCONFETTI
-            cartCONFETTI cartCONFETTI cartCONFETTI cartCONFETTI cartCONFETTI cartCONFETTI cartCONFETTI cartCONFETTI cart
+            Confetti Cart has the party supplies you need, all in one place, all year long. For birthdays
+            and
+            beyond, no matter what you're celebrating, this online portal has everything you could ever want
         </p>
 
 
@@ -237,23 +429,23 @@
         <h1>Our Products</h1>
         <div class="services__wrapper">
             <div class="services__card">
-                <h2>Custom Colorways</h2>
-                <p>AI Powered technology</p>
+                <h2>Birthday Items</h2>
+                <p>caps,candles</p>
                 <div class="services__btn"><button>Get Started</button></div>
             </div>
             <div class="services__card">
-                <h2>Are you Ready?</h2>
-                <p>Take the lepa</p>
+                <h2>Diwali Items</h2>
+                <p>candles rangoli and many more</p>
                 <div class="services__btn"><button>Get Started</button></div>
             </div>
             <div class="services__card">
-                <h2>Full Gradients</h2>
-                <p>100 Combinations</p>
+                <h2>Christmas party</h2>
+                <p>christmas tree,</p>
                 <div class="services__btn"><button>Get Started</button></div>
             </div>
             <div class="services__card">
-                <h2>Infinite Choices</h2>
-                <p>1000's of colors</p>
+                <h2>Return gifts</h2>
+                <p>stylish card</p>
                 <div class="services__btn"><button>Get Started</button></div>
             </div>
         </div>
@@ -469,7 +661,7 @@
             </div>
 
 
-            
+
 
             <div class="shop-item">
                 <span class="shop-item-title">Bow</span>
@@ -483,14 +675,14 @@
     </section>
     <div class="select">
 
-     </div>
+    </div>
 
 
     <!-- Cart Section -->
     <div class="main" id="shopping-cart">
 
         <section class="container content-section">
-            <h2 class="section-header">CART</h2>
+           <h2 class="section-header">CART</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
@@ -523,57 +715,57 @@
 
 
 
-   <!-- Footer Section -->
-   <div class="footer__container">
-    <div class="footer__links">
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-                <h2>About Us</h2>
-                <a href="">How it works</a> <a href="">Testimonials</a>
-                <a href="">Careers</a> <a href="">Terms of Service</a>
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="">How it works</a> <a href="">Testimonials</a>
+                    <a href="">Careers</a> <a href="">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="">Contact</a> <a href="">Support</a>
+                    <a href="">Destinations</a>
+                </div>
             </div>
-            <div class="footer__link--items">
-                <h2>Contact Us</h2>
-                <a href="">Contact</a> <a href="">Support</a>
-                <a href="">Destinations</a>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Videos</h2>
+                    <a href="">Submit Video</a> <a href="">Ambassadors</a>
+                    <a href="">Agency</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="">Instagram</a> <a href="">Facebook</a>
+                    <a href="">Youtube</a> <a href="">Twitter</a>
+                </div>
             </div>
         </div>
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-                <h2>Videos</h2>
-                <a href="">Submit Video</a> <a href="">Ambassadors</a>
-                <a href="">Agency</a>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="" id="footer__logo">CONFETTI CART</a>
+                </div>
+                <p class="website__rights">© CONFETTI CART 2020. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                    <a href="" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-            <div class="footer__link--items">
-                <h2>Social Media</h2>
-                <a href="">Instagram</a> <a href="">Facebook</a>
-                <a href="">Youtube</a> <a href="">Twitter</a>
-            </div>
-        </div>
+        </section>
     </div>
-    <section class="social__media">
-        <div class="social__media--wrap">
-            <div class="footer__logo">
-                <a href="" id="footer__logo">CONFETTI CART</a>
-            </div>
-            <p class="website__rights">© CONFETTI CART 2020. All rights reserved</p>
-            <div class="social__icons">
-                <a href="" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="" class="social__icon--link"><i class="fab fa-instagram"></i></a>
-                <a href="" class="social__icon--link"><i class="fab fa-youtube"></i></a>
-                <a href="" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-                <a href="" class="social__icon--link"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </section>
-</div>
 
 
 
 
 
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         let progress=document.getElementById('progressbar');
         let totalheight= document.body.scrollHeight - window.innerHeight;
         window.onscroll=function(){
@@ -582,7 +774,7 @@
         }
     
         
-        </script>
+        </script>-->
 
 </body>
 
