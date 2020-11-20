@@ -43,7 +43,7 @@
         .header {
             width: 100%;
             height: 70px;
-            background-color: #2f3640;
+            background-color:   rgb(20, 20, 20);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -88,7 +88,7 @@
             height: 100%;
             position: fixed;
             top: 70px;
-            background-color: #353b48;
+            background-color: rgb(243, 240, 240);
             margin: 0;
             left: -100%;
             transition: .7s;
@@ -127,6 +127,7 @@
             top: 20px;
             left: 30px;
             transition: .5s;
+            position: absolute;
         }
 
         .hide-btn {
@@ -289,37 +290,54 @@
 
     <!--  <div id="progressbar"></div>
     <div id="scrollpath"></div>-->
-    
-       
 
 
 
 
 
 
-  
+
+
+
 
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
 
-           <input type="checkbox" name="" id="chk">
-    <label for="chk" class="show-btn">
-        <i class="fa fa-shopping-cart" style="color: aqua;" ></i>
-    </label>
-    <label for="chk" class="hide-btn">
-        <i class="fa fa-times" style="color: aqua;"></i>
-    </label>
+            <!--<div class="header">
+                <img src="./Images/miniproject_logo (2).jpg" alt="">
+                
+            </div>-->
+            
+                <a href="index1.html" class="navbar__links" id="home-page">Home</a>
+            
+            
+                <a href="about.html" class="navbar__links" id="about-page">About</a>
+            
 
-    <div class="sidebar">
-        <div class="main" id="shopping-cart">
+                <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
+            
+            <input type="checkbox" name="" id="chk">
+            <label for="chk" class="show-btn">
+                
+                <i class="fa fa-shopping-cart" style="color: rgb(129, 3, 73);"></i>
+                cart
+            </label>
+            <label for="chk" class="hide-btn">
+                
+                <i class="fa fa-times" style="color: rgb(129, 3, 73);"></i>
+                
+            </label>
 
-          
-        
+            <div class="sidebar">
+                <div class="main" id="shopping-cart">
+
+
+
                     <section class="container content-section">
-                        
+
                         <div class="cart-row">
-                           
+
                             <span class="cart-item cart-header cart-column">ITEM NAME</span>
                             <span class="cart-price cart-header cart-column">ITEM PRICE</span>
                             <span class="cart-quantity cart-header cart-column">QUANTITY</span>
@@ -332,16 +350,16 @@
                         </div>
                         <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
                     </section>
-                
-        </div>
-    </div>
+
+                </div>
+            </div>
 
 
 
 
 
-  
-            <a href="#home" id="navbar__logo">CONFETTI CART</a>
+
+           <!-- <a href="#home" id="navbar__logo">CONFETTI CART</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span> <span class="bar"></span>
                 <span class="bar"></span>
@@ -358,9 +376,9 @@
                 </li>
                 <li class="navbar__btn">
                     <a href="#shopping-cart" class="button" id="signup">Shopping Cart</a>
-                    <!--  <h1><i class="fa fa-shopping-cart"></i></h1>  -->
+                      <h1><i class="fa fa-shopping-cart"></i></h1>  
                 </li>
-            </ul>
+            </ul>-->
         </div>
     </nav>
 
@@ -682,7 +700,7 @@
     <div class="main" id="shopping-cart">
 
         <section class="container content-section">
-           <h2 class="section-header">CART</h2>
+            <h2 class="section-header">CART</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
