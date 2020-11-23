@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-
+    <link rel="stylesheet" href="nav.css">
     <!-- bootstrap cdn link-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -64,16 +64,35 @@
         );
         wow.init();
     </script>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <!--navbar-->
+    <div class="topnav" id="myTopnav">
+        <a href="index1.html" class="active">Home</a>
+        <a href="store.html">Store</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
 
-    <!-- Navbar Section -->
+    <!-- Navbar Section 
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="#home" id="navbar__logo">CONFETTI CART</a>
+            <a href="#" id="navbar__logo">CONFETTI CART</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span> <span class="bar"></span>
                 <span class="bar"></span>
@@ -91,7 +110,7 @@
 
             </ul>
         </div>
-    </nav>
+    </nav>-->
     <section class="breadcrumbs-section">
         <div class="container pl-3 p-sm-3">
             <div class="row">
@@ -135,35 +154,35 @@
     </section>
 
     <section class="my-5">
-     <div class="py-5">
-          <h3 class="text-center"> 
-                    Contact Us</h3>
-     </div>
+        <div class="py-5">
+            <h3 class="text-center">
+                Contact Us</h3>
+        </div>
 
-     <div class="w-50 m-auto">
-          <form action="userinfo.php" method="post">
-          <div class="form-group">
-          <label >Ussername</label>
-          <input type="text" name="user"  auotcomplete="off"  class="form-control">
-     </div>
-     <div class="form-group">
-          <label >Email id</label>
-          <input type="text" name="email"  auotcomplete="off"  class="form-control">
-     </div>
-     <div class="form-group">
-          <label >Mobile</label>
-          <input type="text" name="mobile"  auotcomplete="off"  class="form-control">
-     </div>
-     <div class="form-group">
-          <label > Comment</label>
-          <textarea class="form-control" name="comment">
+        <div class="w-50 m-auto">
+            <form action="userinfo.php" method="post">
+                <div class="form-group">
+                    <label>Ussername</label>
+                    <input type="text" name="user" auotcomplete="off" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Email id</label>
+                    <input type="text" name="email" auotcomplete="off" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Mobile</label>
+                    <input type="text" name="mobile" auotcomplete="off" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label> Comment</label>
+                    <textarea class="form-control" name="comment">
           </textarea>
-     </div>
+                </div>
 
-     <button type="submit" class="btn btn-primary">Submit</button>
-     </form>
-     </div>
-     </section>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
 
 
 

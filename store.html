@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Confetti Cart</title>
 
-
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="styles1.css" />
     <link rel="stylesheet" href="light.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="box.css">
-    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="styles.css" />
     <!--<link rel="stylesheet" href="scrollbar.css">!-->
     <link rel='icon' href="img/logo.png">
@@ -35,17 +34,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
         integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
         crossorigin="anonymous"></script>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
             }
-        }
-    </script>
+        </script>
     <style>
         * {
             padding: 0;
@@ -113,7 +111,7 @@
 
         .sidebar a i {
             margin: 10px;
-            hover: "pink";
+            hover:"pink";
         }
 
 
@@ -143,7 +141,7 @@
             left: 30px;
             transition: .5s;
             position: absolute;
-
+            
         }
 
         .hide-btn {
@@ -211,165 +209,120 @@
 
 <body>
 
+  
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="header">
+              <!--  <img src="./Images/miniproject_logo (2).jpg" alt="">-->
+
+                <a href="#" id="navbar__logo">CONFETTI</a>
+
+            </div>
+           
+            <!--<div class="header">
+                <img src="./Images/miniproject_logo (2).jpg" alt="">
+                
+                <a href="#home" id="navbar__logo">CONFETTI CART</a>
+            </div>
+            
+                <a href="index1.html" class="navbar__links" id="home-page">Home</a>
+            
+            
+                <a href="about.html" class="navbar__links" id="about-page">About</a>
+            
+
+                <a href="contact.html" class="navbar__links" id="services-page">Contact</a>-->
+
+            <input type="checkbox" name="" id="chk">
+            <label for="chk" class="show-btn">
+
+                <i class="fa fa-shopping-cart" style="color: rgb(129, 3, 73);"></i>
+             
+
+            </label>
+            <label for="chk" class="hide-btn">
+
+                <i class="fa fa-times" style="color: rgb(129, 3, 73);"></i>
+
+            </label>
+
+            <div class="sidebar">
+                <div class="main" id="shopping-cart">
 
 
 
+                    <section class="container content-section">
 
+                        <div class="cart-row">
 
+                            <span class="cart-item cart-header cart-column">ITEM NAME</span>
+                            <span class="cart-price cart-header cart-column">ITEM PRICE</span>
+                            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                        </div>
+                        <div class="cart-items">
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total</strong>
+                            <span class="cart-total-price">Rs0</span>
+                        </div>
+                        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                    </section>
 
-
-
-
-    <!-- Hero Section -->
-    <!--<div class="hero" id="home">
-        <div class="hero__container">
-
-            <div class="Light">
-                <h7>
-                    <span>C</span>
-                    <span>o</span>
-                    <span>n</span>
-                    <span>f</span>
-                    <span>e</span>
-                    <span>t</span>
-                    <span>t</span>
-                    <span>i</span>
-
-                    <span>C</span>
-                    <span>a</span>
-                    <span>r</span>
-                    <span>t</span>
-
-
-                </h7>
+                </div>
             </div>
 
 
-            <p class="hero__description">One Click Picks</p>
-            <button class="main__btn"><a href="about.html">Know More</a></button>
-        </div>
-    </div>-->
 
+
+
+
+            <!-- <a href="#home" id="navbar__logo">CONFETTI CART</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#shopping-cart" class="button" id="signup">Shopping Cart</a>
+                      <h1><i class="fa fa-shopping-cart"></i></h1>  
+                </li>
+            </ul>-->
+        </div>
+    </nav>
+
+
+
+    
+
+   
 <!--navbar-->
-    <div class="topnav" id="myTopnav">
-        <a href="#" class="active">Home</a>
-        <a href="store.html">Store</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-
-
-
-
-    <div id="slider">
-        <figure>
-
-            <img src="Images/banner3.jpg" height="600px" width="1340px">
-            <img src="Images/banner2 (1).png" height="600px" width="1360px">
-            <img src="Images/banner4.jpg" height="600px" width="1340px">
-            <img src="Images/banner5.jpg" height="600px" width="1400px">
-        </figure>
-    </div>
+<div class="topnav" id="myTopnav">
+    <a href="index1.html" class="active">Home</a>
+    <a href="store.html">Store</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
 
 
 
 
 
-
-
-
-    <marquee direction="left" scrollamount="10" width="auto" onmouseover="this.stop();" "="" onmouseout=" this.start();"
-        style="color:rgb(243, 233, 233); background-color: #000; margin: 0px;">
-
-        <p style="padding-top:10px; font-size: 15px;">
-            Confetti Cart has the party supplies you need, all in one place, all year long. For birthdays
-            and
-            beyond, no matter what you're celebrating, this online portal has everything you could ever want
-        </p>
-
-
-    </marquee>
-
-
-    <!-- About Section -->
-    <div class="main" id="">
-        <div class="main__container">
-            <div class="main__img--container">
-                <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
-            </div>
-            <div class="main__content">
-                <h1>About Us</h1>
-                <h2>E-commerce Website</h2>
-                <p>Click here learn more about our website</p>
-                <button class="main__btn"><a href="about.html">Click Here</a></button>
-            </div>
-        </div>
-    </div>
-    <div class="Boxcontainer">
-
-
-        <div class="box">
-            <div class="imgBx">
-                <img src="./Images/diwali products.jpg" alt="">
-            </div>
-            <div class="Boxcontent">
-                <h2>Diwali Products <br><span>SpecialPrice </span></h2>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="imgBx">
-                <img src="./Images/bday.jpg" alt="">
-            </div>
-            <div class="Boxcontent">
-                <h2>Birthday<br><span>SpecialPrice </span></h2>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="imgBx">
-                <img src="./Images/christmas (1).jpg" alt="">
-            </div>
-            <div class="Boxcontent">
-                <h2>Christmas <br><span>SpecialPrice </span></h2>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <!-- Services Section -->
-    <div class="services" id="">
-        <h1>Our Products</h1>
-        <div class="services__wrapper">
-            <div class="services__card">
-                <h2>Birthday Items</h2>
-                <p>caps,candles</p>
-                <div class="services__btn"><button>BUY</button></div>
-            </div>
-            <div class="services__card">
-                <h2>Diwali Items</h2>
-                <p>candles rangoli and many more</p>
-                <div class="services__btn"><button>BUY</button></div>
-            </div>
-            <div class="services__card">
-                <h2>Christmas party</h2>
-                <p>christmas tree,</p>
-                <div class="services__btn"><button>BUY</button></div>
-            </div>
-            <div class="services__card">
-                <h2>Return gifts</h2>
-                <p>stylish card</p>
-                <div class="services__btn"><button>BUY</button></div>
-            </div>
-        </div>
-
-    </div>
-    <!--product 
+   
+    <!--product -->
     <section class="container content-section">
         <h2 class="section-header">PRODUCTS</h2>
         <div class="shop-items">
@@ -593,7 +546,7 @@
     </section>
     <div class="select">
 
-    </div>-->
+    </div>
 
 
     <!-- Cart Section
@@ -616,20 +569,6 @@
         </section>
     </div> -->
 
-    <!--contact us-->
-    <div class="main__container">
-        <div class="main__content">
-            <h1>Join Our Team</h1>
-            <h2>Contact US</h2>
-            <p>See what makes us different</p>
-            <button class="main__btn"><a href="contact.html">Click Here</a></button>
-        </div>
-        <div class="main__img--container">
-            <div class="main__img--card" id="card-2">
-                <i class="fas fa-users"></i>
-            </div>
-        </div>
-    </div>
 
 
 
