@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="confettistyle.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Document</title>
 
+    <link rel="stylesheet" href="nav.css">
     <!-- bootstrap cdn link-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 
@@ -19,127 +18,27 @@
 
     <!-- google font cdn-->
     <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300&display=swap" rel="stylesheet">
-
-
-
-</head>
-
-<body>
-
-
-    <nav class="navbar navbar-expand-sm  navbar-custom  navbar-dark">
-        <a class=" wow rollIn navbar-brand " href="#">Confetti Cart</a>
-
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-            <ul class="navbar-nav ml-auto animated slideInDown">
-                <li class="nav-item active">
-                    <a class="nav-link" href="confetti.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-
-
-            <!-- login icon
-            <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login
-                </a>
-
-            </span> -->
+    <link rel='icon' href="img/logo.png">
 
 
 
 
-        </div>
-    </nav>
+
+
+    <link rel="stylesheet" href="styles1.css" />
 
 
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
 
-    <section class="breadcrumbs-section">
-        <div class="container p-1 p-sm-3">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="wow fadeOut" >
-                        About Us
-                    </h2>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="confetti.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="about.html">About Us</a></li>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-                    </ol>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-
-    <section class="about-section">
-        <div class="container p-1 p-sm-3">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="wow slideInDown">
-                        About Confetti cart
-                    </h2>
-                    <hr />
-                </div>
-                <div class="col-md-3">
-                    <img class="img-fluid"   src="img/miniproject_logo (2).jpg">
-                </div>
-                <div class="col-9">
-                    <p>
-                        Confetti Cart has the party supplies you need, all in one place, all year long. For birthdays
-                        and
-                        beyond, no matter what you're celebrating, this online portal has everything you could ever want
-                        when
-                        you're throwing the best party ever. The ease and convenience of the site makes planning and
-                        shopping
-                        for your party almost as fun as having it!
-
-                    </p>
-                    <p>
-                        Confetti Cart has the party supplies you need, all in one place, all year long. For birthdays
-                        and
-                        beyond, no matter what you're celebrating, this online portal has everything you could ever want       
-
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <div class=" wow zoomOut" id="banner">
-
-    </div>
-
-
-    
-
-
+    <script src="app1.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
         integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
@@ -165,6 +64,168 @@
         );
         wow.init();
     </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+<!--navbar-->
+<div class="topnav" id="myTopnav">
+    <a href="index1.html" class="active">Home</a>
+    <a href="store.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+
+    <!-- Navbar Section 
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#" id="navbar__logo">CONFETTI CART</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index1.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>-->
+    <section class="breadcrumbs-section">
+        <div class="container p-1 p-sm-3">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="wow fadeOut">
+                        About Us
+                    </h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index1.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">About Us</a></li>
+
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="about-section">
+        <div class="container p-1 p-sm-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="wow slideInDown">
+                        About Confetti cart
+                    </h2>
+                    <hr />
+                </div>
+                <!--<div class="col-md-3 ">
+                    <img class="img-fluid"   src="img/miniproject_logo (2).jpg">
+                </div>-->
+                <div class="col-9 ">
+                    <p>
+                        Confetti Cart has the party supplies you need, all in one place, all year long. For birthdays
+                        and
+                        beyond, no matter what you're celebrating, this online portal has everything you could ever want
+                        when
+                        you're throwing the best party ever. The ease and convenience of the site makes planning and
+                        shopping
+                        for your party almost as fun as having it!
+
+                    </p>
+                    <p>
+                        Confetti Cart has the party supplies you need, all in one place, all year long. For birthdays
+                        and
+                        beyond, no matter what you're celebrating, this online portal has everything you could ever want
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="">How it works</a> <a href="">Testimonials</a>
+                    <a href="">Careers</a> <a href="">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="">Contact</a> <a href="">Support</a>
+                    <a href="">Destinations</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Videos</h2>
+                    <a href="">Submit Video</a> <a href="">Ambassadors</a>
+                    <a href="">Agency</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="">Instagram</a> <a href="">Facebook</a>
+                    <a href="">Youtube</a> <a href="">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="" id="footer__logo">CONFETTI CART</a>
+                </div>
+                <p class="website__rights">© CONFETTI CART 2020. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                    <a href="" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    
+
 
 
 
